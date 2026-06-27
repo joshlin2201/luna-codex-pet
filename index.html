@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Luna, a custom animated Codex pet based on a real lionhead-mix rabbit.">
+  <title>Luna Codex Pet</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f2ea;
+      --ink: #201b16;
+      --muted: #6c6258;
+      --surface: #fffaf1;
+      --line: #d9cec0;
+      --accent: #4f7669;
+      --accent-2: #9b4d33;
+      --soft: #ece2d4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
+      align-items: center;
+      gap: 42px;
+      width: min(1180px, calc(100vw - 40px));
+      margin: 0 auto;
+      padding: 44px 0 28px;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 760;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(46px, 8vw, 112px);
+      line-height: .9;
+      letter-spacing: 0;
+      max-width: 760px;
+    }
+
+    .lead {
+      max-width: 690px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: clamp(18px, 2.2vw, 24px);
+      line-height: 1.45;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: transparent;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 720;
+      font-size: 14px;
+    }
+
+    .button.primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: white;
+    }
+
+    .pet-stage {
+      display: grid;
+      justify-items: center;
+      gap: 18px;
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .sprite {
+      width: 192px;
+      height: 208px;
+      background-image: url("assets/spritesheet.webp");
+      background-repeat: no-repeat;
+      background-size: 1536px 1872px;
+      image-rendering: auto;
+    }
+
+    .state-title {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.2;
+      text-transform: capitalize;
+    }
+
+    .state-copy {
+      margin: 6px 0 0;
+      min-height: 42px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+      text-align: center;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      width: 100%;
+    }
+
+    button {
+      min-height: 38px;
+      padding: 0 8px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: transparent;
+      color: var(--ink);
+      font: inherit;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    button[aria-pressed="true"] {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: white;
+      font-weight: 760;
+    }
+
+    section {
+      width: min(1180px, calc(100vw - 40px));
+      margin: 0 auto;
+      padding: 54px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .feature {
+      padding: 18px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .feature h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .feature p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 14px;
+    }
+
+    figure {
+      margin: 0;
+      padding: 12px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      max-width: 192px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    .contact-sheet {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .code {
+      overflow: auto;
+      margin: 20px 0 0;
+      padding: 18px;
+      background: #201b16;
+      color: #fff6e8;
+      border-radius: 8px;
+      font: 13px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    footer {
+      width: min(1180px, calc(100vw - 40px));
+      margin: 0 auto;
+      padding: 30px 0 44px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        padding-top: 28px;
+      }
+
+      .feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 520px) {
+      .hero,
+      section,
+      footer {
+        width: min(100vw - 22px, 520px);
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Custom Codex Pet</p>
+        <h1>Luna</h1>
+        <p class="lead">A public showcase for a full nine-state Codex pet built from a real rabbit, with low loaf anatomy, lionhead ruff, mottled coat detail, and rabbit-specific hind-foot motion.</p>
+        <div class="actions">
+          <a class="button primary" href="#preview">Preview States</a>
+          <a class="button" href="assets/spritesheet.webp">Download Atlas</a>
+          <a class="button" href="pet.json">View Manifest</a>
+        </div>
+      </div>
+      <div class="pet-stage" id="preview">
+        <div id="sprite" class="sprite" role="img" aria-label="Animated Luna sprite preview"></div>
+        <div>
+          <h2 id="stateTitle" class="state-title">idle</h2>
+          <p id="stateDescription" class="state-copy">Compact tucked loaf with breathing, nose twitch, asymmetric blink, and ear flick.</p>
+        </div>
+        <div id="controls" class="controls"></div>
+      </div>
+    </div>
+
+    <section>
+      <h2>Built For Codex</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Complete Atlas</h3>
+          <p>All nine Codex pet states in a validated 1536 x 1872 WebP atlas with transparent unused cells.</p>
+        </div>
+        <div class="feature">
+          <h3>Rabbit Gait</h3>
+          <p>Directional motion uses forefoot reach, hindquarter load, long hind-foot toe-off, flight, and recovery.</p>
+        </div>
+        <div class="feature">
+          <h3>Luna Identity</h3>
+          <p>Low dewlap-cushioned head, steep tucked haunch, white blaze, dark mask, quirky eye, and ruff.</p>
+        </div>
+        <div class="feature">
+          <h3>Public Safe</h3>
+          <p>The repo includes generated pet assets and distilled notes only. Source reference photos are not published.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>State Previews</h2>
+      <div class="preview-grid">
+        <figure><img src="assets/previews/idle.gif" alt="Idle animation"><figcaption>idle</figcaption></figure>
+        <figure><img src="assets/previews/running-right.gif" alt="Running right animation"><figcaption>running-right</figcaption></figure>
+        <figure><img src="assets/previews/running-left.gif" alt="Running left animation"><figcaption>running-left</figcaption></figure>
+        <figure><img src="assets/previews/waving.gif" alt="Waving animation"><figcaption>waving</figcaption></figure>
+        <figure><img src="assets/previews/jumping.gif" alt="Jumping animation"><figcaption>jumping</figcaption></figure>
+        <figure><img src="assets/previews/failed.gif" alt="Failed animation"><figcaption>failed</figcaption></figure>
+        <figure><img src="assets/previews/waiting.gif" alt="Waiting animation"><figcaption>waiting</figcaption></figure>
+        <figure><img src="assets/previews/running.gif" alt="Running animation"><figcaption>running</figcaption></figure>
+        <figure><img src="assets/previews/review.gif" alt="Review animation"><figcaption>review</figcaption></figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact Sheet</h2>
+      <img class="contact-sheet" src="assets/contact-sheet.png" alt="Full Luna Codex pet contact sheet">
+    </section>
+
+    <section>
+      <h2>Install</h2>
+      <p class="lead">Drop the manifest and atlas into your Codex pets directory.</p>
+      <pre class="code">mkdir -p ~/.codex/pets/luna
+cp pet.json ~/.codex/pets/luna/pet.json
+cp assets/spritesheet.webp ~/.codex/pets/luna/spritesheet.webp</pre>
+    </section>
+  </main>
+
+  <footer>
+    Generated Luna pet package by Josh Lin. Built as a public showcase for Codex custom pets.
+  </footer>
+
+  <script>
+    const states = [
+      { name: "idle", row: 0, frames: 6, description: "Compact tucked loaf with breathing, nose twitch, asymmetric blink, and ear flick." },
+      { name: "running-right", row: 1, frames: 8, description: "Rightward rabbit gait with forefeet reach and long hind-foot toe-off." },
+      { name: "running-left", row: 2, frames: 8, description: "Leftward rabbit gait with forefeet reach and long hind-foot toe-off." },
+      { name: "waving", row: 3, frames: 4, description: "Greeting through ear flick, head tilt, blink, and nose twitch." },
+      { name: "jumping", row: 4, frames: 5, description: "Binky-style crouch, hind-foot kick, flatter airborne stretch, and settle." },
+      { name: "failed", row: 5, frames: 8, description: "Soft loaf deflation through ears, eyes, head, and body compression." },
+      { name: "waiting", row: 6, frames: 6, description: "Alert input-needed loaf with perked ears, focus, and nose twitch." },
+      { name: "running", row: 7, frames: 6, description: "In-place task-processing loop through attention, breathing, ears, and eyes." },
+      { name: "review", row: 8, frames: 6, description: "Focused inspection with head tilt and Luna's quirky left-eye squint." }
+    ];
+
+    const sprite = document.getElementById("sprite");
+    const controls = document.getElementById("controls");
+    const title = document.getElementById("stateTitle");
+    const description = document.getElementById("stateDescription");
+    const cellWidth = 192;
+    const cellHeight = 208;
+    let active = states[0];
+    let frame = 0;
+
+    function draw() {
+      sprite.style.backgroundPosition = `-${frame * cellWidth}px -${active.row * cellHeight}px`;
+      frame = (frame + 1) % active.frames;
+    }
+
+    function selectState(state) {
+      active = state;
+      frame = 0;
+      title.textContent = state.name;
+      description.textContent = state.description;
+      for (const button of controls.querySelectorAll("button")) {
+        button.setAttribute("aria-pressed", String(button.dataset.state === state.name));
+      }
+      draw();
+    }
+
+    for (const state of states) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.textContent = state.name;
+      button.dataset.state = state.name;
+      button.setAttribute("aria-pressed", String(state === active));
+      button.addEventListener("click", () => selectState(state));
+      controls.appendChild(button);
+    }
+
+    selectState(active);
+    window.setInterval(draw, 130);
+  </script>
+</body>
+</html>

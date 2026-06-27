@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "package": "luna-codex-pet",
+  "spritesheet": "assets/spritesheet.webp",
+  "contactSheet": "assets/contact-sheet.png",
+  "validation": "qa/installed-validation.json",
+  "review": "qa/qa-review.json",
+  "installedAt": "2026-06-26T11:19:42Z",
+  "anatomyRevision": "rabbit biomechanics repair: forefeet reach, hind feet kick/toe-off, compact steep tucked loaf vs flatter extended body, restored mottled coat detail"
+}

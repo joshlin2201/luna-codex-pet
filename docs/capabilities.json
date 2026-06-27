@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "packageId": "luna",
+  "displayName": "Luna",
+  "runtimeContract": {
+    "manifest": "pet.json",
+    "spritesheet": "spritesheet.webp",
+    "atlas": {
+      "width": 1536,
+      "height": 1872,
+      "columns": 8,
+      "rows": 9,
+      "cellWidth": 192,
+      "cellHeight": 208,
+      "background": "transparent"
+    },
+    "supportedStates": [
+      "idle",
+      "running-right",
+      "running-left",
+      "waving",
+      "jumping",
+      "failed",
+      "waiting",
+      "running",
+      "review"
+    ]
+  },
+  "identityTraits": [
+    "real rabbit Luna, not a generic mascot",
+    "compact low tucked loaf with steep raised gray haunch",
+    "subtle lionhead mix cheek and neck ruff",
+    "low dewlap wrapping over the tucked front legs",
+    "head and chin sitting low into the dewlap instead of perched on a tall neck",
+    "steep gray rear haunch when long hind legs are tucked",
+    "long kicking and trailing rabbit hind feet when back legs extend",
+    "mottled gray saddle and irregular side patch coat detail",
+    "white blaze, white nose, white muzzle, and white chest",
+    "dark gray-brown mask around both eyes with stronger viewer-left patch when front-facing",
+    "quirky slightly squinty left eye",
+    "gray saddle and side patches",
+    "upright expressive asymmetric ears"
+  ],
+  "anatomyRules": {
+    "restingLoaf": [
+      "legs tuck underneath the body",
+      "head sits low into the dewlap/chest cushion",
+      "dewlap and lionhead ruff envelop the front leg area",
+      "tucked long hind legs create a compact shorter loaf with a steep raised gray haunch",
+      "feet are hidden or barely visible under the chest",
+      "silhouette stays long and low rather than round and upright"
+    ],
+    "visibleFeet": [
+      "use rabbit feet only when motion requires it",
+      "feet point downward, tucked, or outward from the body mass",
+      "extended hind feet kick through toe-off and trail behind or to the side as long rabbit feet",
+      "never draw paw pads, hands, fingers, dog feet, cat feet, short generic back paws, or arm-like forelegs"
+    ],
+    "actionMotion": [
+      "directional movement uses rabbit hopping gait with forefeet reach, hindquarter load, hind-foot toe-off/kick, flight, and recovery",
+      "jumping reads as a long-body binky with crouch, push-off, airborne extension, and settle",
+      "compress frames show the steep tucked haunch and extension frames show long kicking/trailing hind feet",
+      "expressive states should rely on ears, eyes, nose, head, ruff, and body compression"
+    ]
+  },
+  "stateCapabilities": {
+    "idle": {
+      "row": 0,
+      "frames": 6,
+      "purpose": "default tucked loaf presence",
+      "motion": ["breathing", "nose twitch", "asymmetric blink", "small ear flick"],
+      "accuracyNotes": ["feet hidden", "dewlap covers front legs", "quirky left eye retained"]
+    },
+    "running-right": {
+      "row": 1,
+      "frames": 8,
+      "purpose": "rightward traversal",
+      "motion": ["crouch", "long-body stretch", "hindquarter follow-through", "settle"],
+      "accuracyNotes": ["long rabbit body", "feet only as motion accents", "no cartoon leg cycle"]
+    },
+    "running-left": {
+      "row": 2,
+      "frames": 8,
+      "purpose": "leftward traversal",
+      "motion": ["mirrored directional stretch", "compress", "glide", "recover"],
+      "accuracyNotes": ["separate state for left movement", "keeps dark mask and gray saddle readable"]
+    },
+    "waving": {
+      "row": 3,
+      "frames": 4,
+      "purpose": "friendly acknowledgement",
+      "motion": ["ear flick", "head tilt", "soft blink", "nose twitch"],
+      "accuracyNotes": ["no lifted foreleg", "no hand wave", "front feet remain tucked"]
+    },
+    "jumping": {
+      "row": 4,
+      "frames": 5,
+      "purpose": "binky-style jump",
+      "motion": ["crouch", "push-off", "elongated airborne body", "feet tucked/extended naturally", "landing settle"],
+      "accuracyNotes": ["Luna becomes visibly long in the air", "rabbit feet read as feet, not paws"]
+    },
+    "failed": {
+      "row": 5,
+      "frames": 8,
+      "purpose": "soft failed/error mood",
+      "motion": ["ear droop", "head lower", "body flatten", "small recovery"],
+      "accuracyNotes": ["sadness through posture", "no props", "no humanized arms"]
+    },
+    "waiting": {
+      "row": 6,
+      "frames": 6,
+      "purpose": "alert input-needed state",
+      "motion": ["ears perk", "head lift", "nose twitch", "blink"],
+      "accuracyNotes": ["loaf still grounded", "front legs hidden by dewlap"]
+    },
+    "running": {
+      "row": 7,
+      "frames": 6,
+      "purpose": "in-place task-processing state",
+      "motion": ["focused breathing", "small head bob", "ear adjustment", "eye/nose motion"],
+      "accuracyNotes": ["not a generic spinner replacement", "uses Luna-specific facial features"]
+    },
+    "review": {
+      "row": 8,
+      "frames": 6,
+      "purpose": "inspection/review state",
+      "motion": ["head tilt", "left-eye squint", "blink", "ear angle change"],
+      "accuracyNotes": ["quirky left eye is the signature cue", "feet stay tucked"]
+    }
+  },
+  "qualityArtifacts": {
+    "contactSheet": "contact-sheet.png",
+    "previewPage": "preview.html",
+    "perStateGifs": "previews/*.gif",
+    "validation": "installed-validation.json",
+    "qaSummary": "qa-summary.json",
+    "featureMap": "FEATURES.md",
+    "identityGuide": "IDENTITY-GUIDE.md"
+  }
+}
