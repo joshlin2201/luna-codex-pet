@@ -5,6 +5,22 @@
   "contactSheet": "assets/contact-sheet.png",
   "validation": "qa/installed-validation.json",
   "review": "qa/qa-review.json",
-  "installedAt": "2026-06-26T11:19:42Z",
-  "anatomyRevision": "rabbit biomechanics repair: forefeet reach, hind feet kick/toe-off, compact steep tucked loaf vs flatter extended body, restored mottled coat detail"
+  "previews": [
+    "assets/previews/idle.gif",
+    "assets/previews/running-right.gif",
+    "assets/previews/running-left.gif",
+    "assets/previews/waving.gif",
+    "assets/previews/jumping.gif",
+    "assets/previews/failed.gif",
+    "assets/previews/waiting.gif",
+    "assets/previews/running.gif",
+    "assets/previews/review.gif"
+  ],
+  "iteration": "2026-06-28-full8-enrichment",
+  "notes": [
+    "Filled all previously empty atlas columns with Luna-consistent in-between frames.",
+    "Rebuilt running-left from the rightward gait for smoother mirrored rabbit motion.",
+    "Separated similar idle/waiting/running/review loops through stronger ear, head, and posture changes.",
+    "Preserved runtime-compatible first-frame counts while providing full 8-column bonus loops for richer preview/showcase playback."
+  ]
 }

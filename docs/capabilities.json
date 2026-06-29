@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "packageId": "luna",
   "displayName": "Luna",
   "runtimeContract": {
@@ -24,7 +24,19 @@
       "waiting",
       "running",
       "review"
-    ]
+    ],
+    "enrichedFull8": true,
+    "legacyRuntimeCounts": {
+      "idle": 6,
+      "running-right": 8,
+      "running-left": 8,
+      "waving": 4,
+      "jumping": 5,
+      "failed": 8,
+      "waiting": 6,
+      "running": 6,
+      "review": 6
+    }
   },
   "identityTraits": [
     "real rabbit Luna, not a generic mascot",
@@ -39,7 +51,8 @@
     "dark gray-brown mask around both eyes with stronger viewer-left patch when front-facing",
     "quirky slightly squinty left eye",
     "gray saddle and side patches",
-    "upright expressive asymmetric ears"
+    "upright expressive asymmetric ears",
+    "v2 full-row animation enrichment with all eight atlas cells filled"
   ],
   "anatomyRules": {
     "restingLoaf": [
@@ -66,66 +79,155 @@
   "stateCapabilities": {
     "idle": {
       "row": 0,
-      "frames": 6,
+      "frames": 8,
       "purpose": "default tucked loaf presence",
-      "motion": ["breathing", "nose twitch", "asymmetric blink", "small ear flick"],
-      "accuracyNotes": ["feet hidden", "dewlap covers front legs", "quirky left eye retained"]
+      "motion": [
+        "breathing",
+        "nose twitch",
+        "asymmetric blink",
+        "small ear flick"
+      ],
+      "accuracyNotes": [
+        "feet hidden",
+        "dewlap covers front legs",
+        "quirky left eye retained"
+      ],
+      "runtimeCompatibleFrames": 6
     },
     "running-right": {
       "row": 1,
       "frames": 8,
       "purpose": "rightward traversal",
-      "motion": ["crouch", "long-body stretch", "hindquarter follow-through", "settle"],
-      "accuracyNotes": ["long rabbit body", "feet only as motion accents", "no cartoon leg cycle"]
+      "motion": [
+        "crouch",
+        "long-body stretch",
+        "hindquarter follow-through",
+        "settle"
+      ],
+      "accuracyNotes": [
+        "long rabbit body",
+        "feet only as motion accents",
+        "no cartoon leg cycle"
+      ],
+      "runtimeCompatibleFrames": 8
     },
     "running-left": {
       "row": 2,
       "frames": 8,
       "purpose": "leftward traversal",
-      "motion": ["mirrored directional stretch", "compress", "glide", "recover"],
-      "accuracyNotes": ["separate state for left movement", "keeps dark mask and gray saddle readable"]
+      "motion": [
+        "mirrored directional stretch",
+        "compress",
+        "glide",
+        "recover",
+        "smoothed return loop"
+      ],
+      "accuracyNotes": [
+        "separate state for left movement",
+        "keeps dark mask and gray saddle readable"
+      ],
+      "runtimeCompatibleFrames": 8
     },
     "waving": {
       "row": 3,
-      "frames": 4,
+      "frames": 8,
       "purpose": "friendly acknowledgement",
-      "motion": ["ear flick", "head tilt", "soft blink", "nose twitch"],
-      "accuracyNotes": ["no lifted foreleg", "no hand wave", "front feet remain tucked"]
+      "motion": [
+        "ear flick",
+        "head tilt",
+        "soft blink",
+        "nose twitch",
+        "return-loop in-between frames"
+      ],
+      "accuracyNotes": [
+        "no lifted foreleg",
+        "no hand wave",
+        "front feet remain tucked"
+      ],
+      "runtimeCompatibleFrames": 4
     },
     "jumping": {
       "row": 4,
-      "frames": 5,
+      "frames": 8,
       "purpose": "binky-style jump",
-      "motion": ["crouch", "push-off", "elongated airborne body", "feet tucked/extended naturally", "landing settle"],
-      "accuracyNotes": ["Luna becomes visibly long in the air", "rabbit feet read as feet, not paws"]
+      "motion": [
+        "crouch",
+        "push-off",
+        "elongated airborne body",
+        "feet tucked/extended naturally",
+        "landing settle",
+        "return-loop in-between frames"
+      ],
+      "accuracyNotes": [
+        "Luna becomes visibly long in the air",
+        "rabbit feet read as feet, not paws"
+      ],
+      "runtimeCompatibleFrames": 5
     },
     "failed": {
       "row": 5,
       "frames": 8,
       "purpose": "soft failed/error mood",
-      "motion": ["ear droop", "head lower", "body flatten", "small recovery"],
-      "accuracyNotes": ["sadness through posture", "no props", "no humanized arms"]
+      "motion": [
+        "ear droop",
+        "head lower",
+        "body flatten",
+        "small recovery"
+      ],
+      "accuracyNotes": [
+        "sadness through posture",
+        "no props",
+        "no humanized arms"
+      ],
+      "runtimeCompatibleFrames": 8
     },
     "waiting": {
       "row": 6,
-      "frames": 6,
+      "frames": 8,
       "purpose": "alert input-needed state",
-      "motion": ["ears perk", "head lift", "nose twitch", "blink"],
-      "accuracyNotes": ["loaf still grounded", "front legs hidden by dewlap"]
+      "motion": [
+        "ears perk",
+        "head lift",
+        "nose twitch",
+        "blink"
+      ],
+      "accuracyNotes": [
+        "loaf still grounded",
+        "front legs hidden by dewlap"
+      ],
+      "runtimeCompatibleFrames": 6
     },
     "running": {
       "row": 7,
-      "frames": 6,
+      "frames": 8,
       "purpose": "in-place task-processing state",
-      "motion": ["focused breathing", "small head bob", "ear adjustment", "eye/nose motion"],
-      "accuracyNotes": ["not a generic spinner replacement", "uses Luna-specific facial features"]
+      "motion": [
+        "focused breathing",
+        "small head bob",
+        "ear adjustment",
+        "eye/nose motion"
+      ],
+      "accuracyNotes": [
+        "not a generic spinner replacement",
+        "uses Luna-specific facial features"
+      ],
+      "runtimeCompatibleFrames": 6
     },
     "review": {
       "row": 8,
-      "frames": 6,
+      "frames": 8,
       "purpose": "inspection/review state",
-      "motion": ["head tilt", "left-eye squint", "blink", "ear angle change"],
-      "accuracyNotes": ["quirky left eye is the signature cue", "feet stay tucked"]
+      "motion": [
+        "head tilt",
+        "left-eye squint",
+        "blink",
+        "ear angle change"
+      ],
+      "accuracyNotes": [
+        "quirky left eye is the signature cue",
+        "feet stay tucked"
+      ],
+      "runtimeCompatibleFrames": 6
     }
   },
   "qualityArtifacts": {
@@ -135,6 +237,8 @@
     "validation": "installed-validation.json",
     "qaSummary": "qa-summary.json",
     "featureMap": "FEATURES.md",
-    "identityGuide": "IDENTITY-GUIDE.md"
-  }
+    "identityGuide": "IDENTITY-GUIDE.md",
+    "iterationNotes": "docs/ITERATION-2026-06-28.md"
+  },
+  "iteration": "2026-06-28-full8-enrichment"
 }

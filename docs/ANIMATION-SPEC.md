@@ -2,19 +2,23 @@
 
 This is the working spec for preserving Luna's expanded behavior set.
 
+## Iteration 2026-06-28
+
+Luna v2 fills all 8 atlas cells in every row. The first runtime-compatible frames still preserve the Codex state order, while the previously empty cells now contain Luna-consistent in-between or return-loop frames for richer showcase playback and future renderers that scan all columns.
+
 ## Runtime States
 
 | Row | State | Frames | Capability |
 | --- | --- | ---: | --- |
-| 0 | `idle` | 6 | Compact tucked loaf with steep haunch, breathing, nose twitch, asymmetric blink, and small ear flick. |
+| 0 | `idle` | 8 | Compact tucked loaf with steep haunch, breathing, nose twitch, asymmetric blink, and small ear flick. |
 | 1 | `running-right` | 8 | Rightward rabbit gait with forefeet reach, hind-foot kick/toe-off, flight, and recovery. |
-| 2 | `running-left` | 8 | Leftward rabbit gait with forefeet reach, hind-foot kick/toe-off, flight, and recovery. |
-| 3 | `waving` | 4 | Friendly ear flick and head tilt instead of an inaccurate foreleg wave. |
-| 4 | `jumping` | 5 | Binky-style compact crouch, hind-foot kick, flatter airborne stretch, and settle. |
+| 2 | `running-left` | 8 | Mirrored/smoothed leftward rabbit gait with forefeet reach, hind-foot kick/toe-off, flight, and recovery. |
+| 3 | `waving` | 8 | Friendly ear flick and head tilt instead of an inaccurate foreleg wave. |
+| 4 | `jumping` | 8 | Binky-style compact crouch, hind-foot kick, flatter airborne stretch, and settle. |
 | 5 | `failed` | 8 | Soft droop: ears lower, head dips, loaf compresses. |
-| 6 | `waiting` | 6 | Alert input-needed loaf with perked ears and nose twitch. |
-| 7 | `running` | 6 | In-place working loop using head, ears, breathing, eye, and nose motion. |
-| 8 | `review` | 6 | Focused inspection loop with head tilt and Luna's quirky left-eye squint. |
+| 6 | `waiting` | 8 | Alert input-needed loaf with perked ears and nose twitch. |
+| 7 | `running` | 8 | In-place working loop using head, ears, breathing, eye, and nose motion. |
+| 8 | `review` | 8 | Focused inspection loop with head tilt and Luna's quirky left-eye squint. |
 
 ## Accuracy Locks
 

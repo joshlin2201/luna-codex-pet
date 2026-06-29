@@ -6,17 +6,18 @@ Showcase package: `luna-codex-pet`
 
 - `pet.json` - Codex custom pet manifest.
 - `assets/spritesheet.webp` - Fixed 8x9 Codex pet atlas, 192x208 cells.
+- Luna v2 fills all 8 cells in every row; older runtime-compatible frame counts are still represented by the first frames in each row.
 
 ## Expanded State Behaviors
 
 - `idle`: compact tucked loaf with steep raised haunch, nose twitch, asymmetric blink, ear flick, and subtle breathing.
 - `running-right`: rightward rabbit hopping gait with forefeet reach, hind-leg load, long hind-foot kick/toe-off, flight, and recovery.
-- `running-left`: separately generated leftward rabbit hopping gait with forefeet reach, hind-leg load, long hind-foot kick/toe-off, flight, and recovery.
-- `waving`: greeting through ear flick and head tilt, not a fake paw wave.
-- `jumping`: binky-style jump with compact crouch, hind-foot kick, flatter long airborne extension, and settle.
+- `running-left`: smoother mirrored leftward rabbit hopping gait with forefeet reach, hind-leg load, long hind-foot kick/toe-off, flight, and recovery.
+- `waving`: eight-frame greeting through ear flick and head tilt, not a fake paw wave.
+- `jumping`: eight-frame binky-style jump with compact crouch, hind-foot kick, flatter long airborne extension, and settle.
 - `failed`: soft deflation through ear droop, head lowering, and eye expression.
 - `waiting`: alert input-needed loop with perked ears, head lift, nose twitch, and blink.
-- `running`: active task-processing loop in place through ear, nose, eye, and head motion.
+- `running`: active task-processing loop in place through ear, nose, eye, and head motion; distinct from directional hopping.
 - `review`: careful inspection loop through head tilt, focused left-eye squint, blink, and ear adjustment.
 
 ## QA Artifacts
