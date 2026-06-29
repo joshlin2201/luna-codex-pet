@@ -1,6 +1,6 @@
 # Luna Codex Pet
 
-Luna is a custom animated Codex pet based on Josh's real rabbit: a long, low white-and-gray lionhead-mix rabbit rendered in a cute illustration style with a low dewlap-cushioned head, compact steep tucked loaf, long hind feet that kick through motion, mottled gray saddle patches, a white blaze, dark eye mask, quirky left eye, and expressive ears.
+Luna is a custom animated Codex pet based on Josh's real rabbit: a long, low white-and-gray lionhead-mix rabbit with a low dewlap-cushioned head, compact steep tucked loaf, long hind feet that kick through motion, mottled gray saddle patches, a white blaze, dark eye mask, quirky left eye, and expressive ears.
 
 ![Luna contact sheet](assets/contact-sheet.png)
 
@@ -8,12 +8,11 @@ Luna is a custom animated Codex pet based on Josh's real rabbit: a long, low whi
 
 - Full Codex pet atlas: `1536x1872`, 8 columns by 9 rows, `192x208` cells.
 - Nine enriched states: idle, running-right, running-left, waving, jumping, failed, waiting, running, and review.
-- Version 3 renders all 72 atlas cells directly from Luna's behavior/anatomy spec in a cleaner cute illustration style.
+- Version 2 fills all 8 cells in every row, adding 15 previously-empty in-between frames and bonus loop frames.
 - Rabbit-specific animation rules: forefeet reach/land, hindquarters load, long hind feet kick through toe-off, flight, and recovery.
 - Accurate loaf anatomy: low head on dewlap, tucked front feet, compact steep gray haunch when hind legs are folded.
 - No generic paw/arm shapes: feet stay rabbit-specific and only appear where motion requires them.
 - Video-grounded interaction rules for chat/feed states: loaf, wait, inspect, sniff, hop, peek, and settle.
-- Distinct state silhouettes: idle loaf, ear-flick greeting, binky jump, low failed loaf, attentive wait, nose-down processing, and focused review.
 - Public-safe package: generated pet assets and docs only. Original private reference media is not included.
 
 ## Preview
@@ -53,7 +52,7 @@ assets/spritesheet.webp
 
 ## Validation
 
-The installed build passed the Luna v3 full-row validator:
+The installed build passed the Luna v2 full-row validator:
 
 ```json
 {
@@ -72,7 +71,6 @@ See [`qa/installed-validation.json`](qa/installed-validation.json) and [`qa/qa-r
 
 - [`docs/ANIMATION-SPEC.md`](docs/ANIMATION-SPEC.md) - state contract and anatomy locks.
 - [`docs/FEATURES.md`](docs/FEATURES.md) - state behavior map.
-- [`docs/ITERATION-2026-06-29.md`](docs/ITERATION-2026-06-29.md) - v3 implementation notes.
 - [`docs/ITERATION-2026-06-28.md`](docs/ITERATION-2026-06-28.md) - v2 enrichment notes.
 - [`docs/IDENTITY-GUIDE.md`](docs/IDENTITY-GUIDE.md) - Luna identity preservation rules.
 - [`docs/LUNA-REFERENCE-ANALYSIS.md`](docs/LUNA-REFERENCE-ANALYSIS.md) - distilled reference/photo analysis without publishing source photos.

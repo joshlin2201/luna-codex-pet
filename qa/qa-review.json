@@ -85,9 +85,5 @@
       "errors": [],
       "warnings": []
     }
-  ],
-  "visualQA": {
-    "status": "pass",
-    "notes": "Contact sheet visually reviewed after deterministic v3 render: rows are distinct, transparent, Luna-identifiable, and preserve rabbit-specific feet/anatomy rules."
-  }
+  ]
 }
