@@ -5,6 +5,7 @@
   "mode": "RGBA",
   "width": 1536,
   "height": 1872,
+  "iteration": "2026-06-29-video-grounded-v3-render",
   "enrichedFull8": true,
   "runtimeCounts": {
     "idle": 6,
@@ -27,12 +28,12 @@
       "column": 0,
       "used": true,
       "runtimeUsed": true,
-      "nontransparent_pixels": 21677,
+      "nontransparent_pixels": 9878,
       "bbox": [
-        5,
-        21,
-        187,
-        187
+        7,
+        50,
+        161,
+        176
       ]
     },
     {
@@ -41,12 +42,12 @@
       "column": 1,
       "used": true,
       "runtimeUsed": true,
-      "nontransparent_pixels": 20516,
+      "nontransparent_pixels": 9950,
       "bbox": [
-        5,
-        29,
-        187,
-        180
+        7,
+        51,
+        161,
+        177
       ]
     },
     {
@@ -55,12 +56,12 @@
       "column": 2,
       "used": true,
       "runtimeUsed": true,
-      "nontransparent_pixels": 18856,
+      "nontransparent_pixels": 9971,
       "bbox": [
-        5,
-        39,
-        187,
-        173
+        7,
+        52,
+        161,
+        178
       ]
     },
     {
@@ -69,12 +70,12 @@
       "column": 3,
       "used": true,
       "runtimeUsed": true,
-      "nontransparent_pixels": 22080,
+      "nontransparent_pixels": 9873,
       "bbox": [
-        5,
-        21,
-        187,
-        186
+        7,
+        51,
+        161,
+        177
       ]
     },
     {
@@ -83,922 +84,922 @@
       "column": 4,
       "used": true,
       "runtimeUsed": true,
-      "nontransparent_pixels": 19167,
+      "nontransparent_pixels": 9902,
       "bbox": [
-        5,
-        45,
-        187,
-        167
-      ]
-    },
-    {
-      "state": "idle",
-      "row": 0,
-      "column": 5,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 22388,
-      "bbox": [
-        5,
-        17,
-        187,
-        191
-      ]
-    },
-    {
-      "state": "idle",
-      "row": 0,
-      "column": 6,
-      "used": true,
-      "runtimeUsed": false,
-      "nontransparent_pixels": 22080,
-      "bbox": [
-        4,
-        22,
-        186,
-        187
-      ]
-    },
-    {
-      "state": "idle",
-      "row": 0,
-      "column": 7,
-      "used": true,
-      "runtimeUsed": false,
-      "nontransparent_pixels": 20516,
-      "bbox": [
-        6,
-        28,
-        188,
+        7,
+        52,
+        161,
         179
       ]
     },
     {
-      "state": "running-right",
-      "row": 1,
-      "column": 0,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 18432,
-      "bbox": [
-        5,
-        36,
-        187,
-        184
-      ]
-    },
-    {
-      "state": "running-right",
-      "row": 1,
-      "column": 1,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 17882,
-      "bbox": [
-        5,
-        26,
-        187,
-        184
-      ]
-    },
-    {
-      "state": "running-right",
-      "row": 1,
-      "column": 2,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 16920,
-      "bbox": [
-        5,
-        48,
-        187,
-        184
-      ]
-    },
-    {
-      "state": "running-right",
-      "row": 1,
-      "column": 3,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 11416,
-      "bbox": [
-        5,
-        66,
-        187,
-        184
-      ]
-    },
-    {
-      "state": "running-right",
-      "row": 1,
-      "column": 4,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 9505,
-      "bbox": [
-        5,
-        80,
-        187,
-        184
-      ]
-    },
-    {
-      "state": "running-right",
-      "row": 1,
+      "state": "idle",
+      "row": 0,
       "column": 5,
       "used": true,
       "runtimeUsed": true,
-      "nontransparent_pixels": 11416,
+      "nontransparent_pixels": 9878,
       "bbox": [
         7,
-        66,
-        189,
+        50,
+        161,
+        176
+      ]
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 6,
+      "used": true,
+      "runtimeUsed": false,
+      "nontransparent_pixels": 9824,
+      "bbox": [
+        7,
+        51,
+        160,
+        177
+      ]
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 7,
+      "used": true,
+      "runtimeUsed": false,
+      "nontransparent_pixels": 9878,
+      "bbox": [
+        7,
+        50,
+        161,
+        176
+      ]
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 0,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10469,
+      "bbox": [
+        6,
+        55,
+        159,
         184
       ]
     },
     {
       "state": "running-right",
       "row": 1,
-      "column": 6,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 16920,
-      "bbox": [
-        6,
-        48,
-        188,
-        184
-      ]
-    },
-    {
-      "state": "running-right",
-      "row": 1,
-      "column": 7,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 17882,
-      "bbox": [
-        5,
-        26,
-        187,
-        184
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 0,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 18432,
-      "bbox": [
-        5,
-        36,
-        187,
-        184
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
       "column": 1,
       "used": true,
       "runtimeUsed": true,
-      "nontransparent_pixels": 17882,
+      "nontransparent_pixels": 10231,
       "bbox": [
-        5,
-        26,
-        187,
-        184
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 2,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 16920,
-      "bbox": [
-        5,
-        48,
-        187,
-        184
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 3,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 11416,
-      "bbox": [
-        5,
-        66,
-        187,
-        184
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 4,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 9505,
-      "bbox": [
-        5,
-        80,
-        187,
-        184
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 5,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 11416,
-      "bbox": [
-        3,
-        66,
-        185,
-        184
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 6,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 16920,
-      "bbox": [
-        4,
-        48,
-        186,
-        184
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 7,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 17882,
-      "bbox": [
-        5,
-        26,
-        187,
-        184
-      ]
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 0,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 24453,
-      "bbox": [
-        8,
-        5,
-        183,
-        203
-      ]
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 1,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 24725,
-      "bbox": [
-        3,
-        6,
-        186,
-        201
-      ]
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 2,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 23320,
-      "bbox": [
-        7,
-        6,
-        188,
-        204
-      ]
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 3,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 24684,
-      "bbox": [
-        7,
-        5,
-        185,
-        203
-      ]
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 4,
-      "used": true,
-      "runtimeUsed": false,
-      "nontransparent_pixels": 23320,
-      "bbox": [
-        7,
-        6,
-        188,
-        204
-      ]
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 5,
-      "used": true,
-      "runtimeUsed": false,
-      "nontransparent_pixels": 24725,
-      "bbox": [
-        3,
-        6,
-        186,
-        201
-      ]
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 6,
-      "used": true,
-      "runtimeUsed": false,
-      "nontransparent_pixels": 24453,
-      "bbox": [
-        8,
-        6,
-        183,
-        204
-      ]
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 7,
-      "used": true,
-      "runtimeUsed": false,
-      "nontransparent_pixels": 24684,
-      "bbox": [
-        8,
-        5,
-        186,
-        203
-      ]
-    },
-    {
-      "state": "jumping",
-      "row": 4,
-      "column": 0,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 18985,
-      "bbox": [
-        5,
-        43,
-        187,
-        174
-      ]
-    },
-    {
-      "state": "jumping",
-      "row": 4,
-      "column": 1,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 18493,
-      "bbox": [
-        5,
-        34,
-        187,
-        172
-      ]
-    },
-    {
-      "state": "jumping",
-      "row": 4,
-      "column": 2,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 11444,
-      "bbox": [
-        6,
+        9,
         52,
-        188,
-        160
+        168,
+        181
       ]
     },
     {
-      "state": "jumping",
-      "row": 4,
+      "state": "running-right",
+      "row": 1,
+      "column": 2,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 11290,
+      "bbox": [
+        10,
+        47,
+        174,
+        185
+      ]
+    },
+    {
+      "state": "running-right",
+      "row": 1,
       "column": 3,
       "used": true,
       "runtimeUsed": true,
-      "nontransparent_pixels": 9216,
+      "nontransparent_pixels": 11210,
       "bbox": [
-        5,
-        62,
-        191,
-        150
-      ]
-    },
-    {
-      "state": "jumping",
-      "row": 4,
-      "column": 4,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 11444,
-      "bbox": [
-        6,
-        48,
-        188,
-        156
-      ]
-    },
-    {
-      "state": "jumping",
-      "row": 4,
-      "column": 5,
-      "used": true,
-      "runtimeUsed": false,
-      "nontransparent_pixels": 18493,
-      "bbox": [
-        5,
+        11,
         32,
-        187,
+        178,
         170
       ]
     },
     {
-      "state": "jumping",
-      "row": 4,
+      "state": "running-right",
+      "row": 1,
+      "column": 4,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 11181,
+      "bbox": [
+        10,
+        35,
+        174,
+        173
+      ]
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 5,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10641,
+      "bbox": [
+        11,
+        51,
+        172,
+        180
+      ]
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 6,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10488,
+      "bbox": [
+        9,
+        55,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 7,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10189,
+      "bbox": [
+        8,
+        54,
+        161,
+        185
+      ]
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 0,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10469,
+      "bbox": [
+        33,
+        55,
+        186,
+        184
+      ]
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 1,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10231,
+      "bbox": [
+        24,
+        52,
+        183,
+        181
+      ]
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 2,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 11290,
+      "bbox": [
+        18,
+        47,
+        182,
+        185
+      ]
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 3,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 11210,
+      "bbox": [
+        14,
+        32,
+        181,
+        170
+      ]
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 4,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 11181,
+      "bbox": [
+        18,
+        35,
+        182,
+        173
+      ]
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 5,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10641,
+      "bbox": [
+        20,
+        51,
+        181,
+        180
+      ]
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 6,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10488,
+      "bbox": [
+        30,
+        55,
+        183,
+        184
+      ]
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 7,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10189,
+      "bbox": [
+        31,
+        54,
+        184,
+        185
+      ]
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 0,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10872,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 1,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10868,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 2,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10979,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 3,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10973,
+      "bbox": [
+        29,
+        45,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 4,
+      "used": true,
+      "runtimeUsed": false,
+      "nontransparent_pixels": 10969,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 5,
+      "used": true,
+      "runtimeUsed": false,
+      "nontransparent_pixels": 10896,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waving",
+      "row": 3,
       "column": 6,
       "used": true,
       "runtimeUsed": false,
-      "nontransparent_pixels": 18985,
+      "nontransparent_pixels": 10874,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 7,
+      "used": true,
+      "runtimeUsed": false,
+      "nontransparent_pixels": 10872,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 0,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10718,
+      "bbox": [
+        8,
+        57,
+        161,
+        187
+      ]
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 1,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10294,
+      "bbox": [
+        7,
+        52,
+        166,
+        181
+      ]
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 2,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 11280,
       "bbox": [
         5,
-        44,
-        187,
+        37,
+        169,
         175
       ]
     },
     {
       "state": "jumping",
       "row": 4,
-      "column": 7,
+      "column": 3,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 11254,
+      "bbox": [
+        4,
+        20,
+        171,
+        158
+      ]
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 4,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 11182,
+      "bbox": [
+        5,
+        26,
+        170,
+        164
+      ]
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 5,
       "used": true,
       "runtimeUsed": false,
-      "nontransparent_pixels": 16339,
-      "bbox": [
-        5,
-        54,
-        187,
-        176
-      ]
-    },
-    {
-      "state": "failed",
-      "row": 5,
-      "column": 0,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 24046,
-      "bbox": [
-        5,
-        7,
-        187,
-        201
-      ]
-    },
-    {
-      "state": "failed",
-      "row": 5,
-      "column": 1,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 21555,
-      "bbox": [
-        5,
-        27,
-        187,
-        182
-      ]
-    },
-    {
-      "state": "failed",
-      "row": 5,
-      "column": 2,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 19060,
-      "bbox": [
-        5,
-        43,
-        187,
-        169
-      ]
-    },
-    {
-      "state": "failed",
-      "row": 5,
-      "column": 3,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 15441,
-      "bbox": [
-        5,
-        53,
-        187,
-        161
-      ]
-    },
-    {
-      "state": "failed",
-      "row": 5,
-      "column": 4,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 13334,
-      "bbox": [
-        5,
-        59,
-        187,
-        155
-      ]
-    },
-    {
-      "state": "failed",
-      "row": 5,
-      "column": 5,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 14007,
-      "bbox": [
-        5,
-        55,
-        187,
-        156
-      ]
-    },
-    {
-      "state": "failed",
-      "row": 5,
-      "column": 6,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 19863,
-      "bbox": [
-        5,
-        36,
-        187,
-        173
-      ]
-    },
-    {
-      "state": "failed",
-      "row": 5,
-      "column": 7,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 23192,
-      "bbox": [
-        5,
-        9,
-        187,
-        199
-      ]
-    },
-    {
-      "state": "waiting",
-      "row": 6,
-      "column": 0,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 25292,
-      "bbox": [
-        5,
-        7,
-        187,
-        199
-      ]
-    },
-    {
-      "state": "waiting",
-      "row": 6,
-      "column": 1,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 25569,
-      "bbox": [
-        5,
-        9,
-        187,
-        194
-      ]
-    },
-    {
-      "state": "waiting",
-      "row": 6,
-      "column": 2,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 25970,
-      "bbox": [
-        5,
-        2,
-        187,
-        201
-      ]
-    },
-    {
-      "state": "waiting",
-      "row": 6,
-      "column": 3,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 24303,
-      "bbox": [
-        3,
-        11,
-        186,
-        196
-      ]
-    },
-    {
-      "state": "waiting",
-      "row": 6,
-      "column": 4,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 24035,
+      "nontransparent_pixels": 10677,
       "bbox": [
         6,
-        12,
-        189,
-        196
+        44,
+        168,
+        174
       ]
     },
     {
-      "state": "waiting",
-      "row": 6,
-      "column": 5,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 25284,
-      "bbox": [
-        5,
-        5,
-        187,
-        200
-      ]
-    },
-    {
-      "state": "waiting",
-      "row": 6,
+      "state": "jumping",
+      "row": 4,
       "column": 6,
       "used": true,
       "runtimeUsed": false,
-      "nontransparent_pixels": 25205,
+      "nontransparent_pixels": 10520,
       "bbox": [
-        3,
-        4,
-        186,
-        200
-      ]
-    },
-    {
-      "state": "waiting",
-      "row": 6,
-      "column": 7,
-      "used": true,
-      "runtimeUsed": false,
-      "nontransparent_pixels": 24772,
-      "bbox": [
-        6,
-        13,
-        189,
-        194
-      ]
-    },
-    {
-      "state": "running",
-      "row": 7,
-      "column": 0,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 21268,
-      "bbox": [
-        5,
-        28,
-        187,
-        186
-      ]
-    },
-    {
-      "state": "running",
-      "row": 7,
-      "column": 1,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 20910,
-      "bbox": [
-        6,
-        23,
-        188,
-        186
-      ]
-    },
-    {
-      "state": "running",
-      "row": 7,
-      "column": 2,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 21393,
-      "bbox": [
-        7,
-        25,
-        189,
-        186
-      ]
-    },
-    {
-      "state": "running",
-      "row": 7,
-      "column": 3,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 20598,
-      "bbox": [
-        6,
-        46,
-        188,
-        184
-      ]
-    },
-    {
-      "state": "running",
-      "row": 7,
-      "column": 4,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 20723,
-      "bbox": [
-        4,
-        21,
-        186,
-        186
-      ]
-    },
-    {
-      "state": "running",
-      "row": 7,
-      "column": 5,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 21389,
-      "bbox": [
-        3,
-        21,
-        185,
-        186
-      ]
-    },
-    {
-      "state": "running",
-      "row": 7,
-      "column": 6,
-      "used": true,
-      "runtimeUsed": false,
-      "nontransparent_pixels": 20598,
-      "bbox": [
-        4,
-        46,
-        186,
-        184
-      ]
-    },
-    {
-      "state": "running",
-      "row": 7,
-      "column": 7,
-      "used": true,
-      "runtimeUsed": false,
-      "nontransparent_pixels": 20910,
-      "bbox": [
-        5,
-        23,
-        187,
-        186
-      ]
-    },
-    {
-      "state": "review",
-      "row": 8,
-      "column": 0,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 24907,
-      "bbox": [
-        3,
-        4,
-        185,
-        203
-      ]
-    },
-    {
-      "state": "review",
-      "row": 8,
-      "column": 1,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 24350,
-      "bbox": [
-        1,
-        14,
-        185,
-        192
-      ]
-    },
-    {
-      "state": "review",
-      "row": 8,
-      "column": 2,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 24718,
-      "bbox": [
-        3,
-        6,
-        186,
-        200
-      ]
-    },
-    {
-      "state": "review",
-      "row": 8,
-      "column": 3,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 25101,
-      "bbox": [
-        6,
-        10,
-        189,
-        200
-      ]
-    },
-    {
-      "state": "review",
-      "row": 8,
-      "column": 4,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 21357,
-      "bbox": [
-        5,
-        29,
-        187,
-        182
-      ]
-    },
-    {
-      "state": "review",
-      "row": 8,
-      "column": 5,
-      "used": true,
-      "runtimeUsed": true,
-      "nontransparent_pixels": 24754,
-      "bbox": [
-        6,
         8,
-        189,
-        202
+        55,
+        161,
+        184
+      ]
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 7,
+      "used": true,
+      "runtimeUsed": false,
+      "nontransparent_pixels": 10238,
+      "bbox": [
+        8,
+        53,
+        161,
+        184
+      ]
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 0,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 9933,
+      "bbox": [
+        8,
+        53,
+        161,
+        179
+      ]
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 1,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 9770,
+      "bbox": [
+        7,
+        59,
+        161,
+        184
+      ]
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 2,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 9416,
+      "bbox": [
+        7,
+        65,
+        161,
+        188
+      ]
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 3,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 9175,
+      "bbox": [
+        6,
+        67,
+        161,
+        190
+      ]
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 4,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 9161,
+      "bbox": [
+        7,
+        68,
+        161,
+        190
+      ]
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 5,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 9387,
+      "bbox": [
+        7,
+        65,
+        161,
+        188
+      ]
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 6,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 9694,
+      "bbox": [
+        7,
+        59,
+        161,
+        184
+      ]
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 7,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 9889,
+      "bbox": [
+        7,
+        54,
+        161,
+        181
+      ]
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 0,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10872,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 1,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10920,
+      "bbox": [
+        29,
+        43,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 2,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 11078,
+      "bbox": [
+        28,
+        42,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 3,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 11002,
+      "bbox": [
+        28,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 4,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10892,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 5,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 11007,
+      "bbox": [
+        28,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 6,
+      "used": true,
+      "runtimeUsed": false,
+      "nontransparent_pixels": 10890,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 7,
+      "used": true,
+      "runtimeUsed": false,
+      "nontransparent_pixels": 10872,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 0,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 9949,
+      "bbox": [
+        6,
+        57,
+        167,
+        187
+      ]
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 1,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 9962,
+      "bbox": [
+        6,
+        56,
+        170,
+        186
+      ]
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 2,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10054,
+      "bbox": [
+        6,
+        55,
+        172,
+        184
+      ]
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 3,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10040,
+      "bbox": [
+        6,
+        57,
+        168,
+        186
+      ]
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 4,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 9756,
+      "bbox": [
+        7,
+        58,
+        165,
+        185
+      ]
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 5,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 9967,
+      "bbox": [
+        6,
+        56,
+        169,
+        186
+      ]
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 6,
+      "used": true,
+      "runtimeUsed": false,
+      "nontransparent_pixels": 10043,
+      "bbox": [
+        6,
+        55,
+        171,
+        184
+      ]
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 7,
+      "used": true,
+      "runtimeUsed": false,
+      "nontransparent_pixels": 10000,
+      "bbox": [
+        6,
+        57,
+        167,
+        187
+      ]
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 0,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10896,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 1,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10868,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 2,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10916,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 3,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10900,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 4,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10885,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
+      ]
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 5,
+      "used": true,
+      "runtimeUsed": true,
+      "nontransparent_pixels": 10898,
+      "bbox": [
+        29,
+        44,
+        162,
+        184
       ]
     },
     {
@@ -1007,12 +1008,12 @@
       "column": 6,
       "used": true,
       "runtimeUsed": false,
-      "nontransparent_pixels": 21357,
+      "nontransparent_pixels": 10897,
       "bbox": [
-        4,
         29,
-        186,
-        182
+        44,
+        162,
+        184
       ]
     },
     {
@@ -1021,12 +1022,12 @@
       "column": 7,
       "used": true,
       "runtimeUsed": false,
-      "nontransparent_pixels": 24380,
+      "nontransparent_pixels": 10896,
       "bbox": [
-        3,
-        16,
-        186,
-        193
+        29,
+        44,
+        162,
+        184
       ]
     }
   ]

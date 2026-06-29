@@ -16,11 +16,12 @@
     "assets/previews/running.gif",
     "assets/previews/review.gif"
   ],
-  "iteration": "2026-06-28-full8-enrichment",
+  "iteration": "2026-06-29-video-grounded-v3-render",
   "notes": [
-    "Filled all previously empty atlas columns with Luna-consistent in-between frames.",
-    "Rebuilt running-left from the rightward gait for smoother mirrored rabbit motion.",
-    "Separated similar idle/waiting/running/review loops through stronger ear, head, and posture changes.",
-    "Preserved runtime-compatible first-frame counts while providing full 8-column bonus loops for richer preview/showcase playback."
+    "Rebuilt Luna as a cuter clean illustration style while preserving her real markings and anatomy.",
+    "Made idle, waiting, waving, running, review, and failed visually distinct instead of small transforms of the same pose.",
+    "Grounded chat/feed behaviors in private Luna video labels: loaf, wait, inspect, sniff, hop, peek, and settle.",
+    "Directional rows now show rabbit-specific load, forefeet reach, long hind-foot kick, flight, landing, and recovery.",
+    "Loaf states keep Luna's head low into the dewlap with hidden or tiny tucked rabbit feet."
   ]
 }

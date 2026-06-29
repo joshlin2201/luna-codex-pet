@@ -6,7 +6,7 @@ Showcase package: `luna-codex-pet`
 
 - `pet.json` - Codex custom pet manifest.
 - `assets/spritesheet.webp` - Fixed 8x9 Codex pet atlas, 192x208 cells.
-- Luna v2 fills all 8 cells in every row; older runtime-compatible frame counts are still represented by the first frames in each row.
+- Luna v3 renders all 8 cells in every row; older runtime-compatible frame counts are still represented by the first frames in each row.
 
 ## Expanded State Behaviors
 
@@ -17,8 +17,16 @@ Showcase package: `luna-codex-pet`
 - `jumping`: eight-frame binky-style jump with compact crouch, hind-foot kick, flatter long airborne extension, and settle.
 - `failed`: soft deflation through ear droop, head lowering, and eye expression.
 - `waiting`: alert input-needed loop with perked ears, head lift, nose twitch, and blink.
-- `running`: active task-processing loop in place through ear, nose, eye, and head motion; distinct from directional hopping.
+- `running`: active task-processing loop as low nose-down exploration; distinct from directional hopping.
 - `review`: careful inspection loop through head tilt, focused left-eye squint, blink, and ear adjustment.
+
+## V3 Implementation
+
+- `tools/render_luna_v3.py` deterministically renders the full atlas, contact sheet, GIF previews, QA JSON, and installed Codex package.
+- `tools/enrich_luna_iteration.py` remains as a compatibility wrapper around the v3 renderer.
+- The art style is a cleaner cute illustration rather than the earlier semi-realistic transformed sheet.
+- The renderer encodes Luna's markings directly: white blaze, dark mask, mottled gray saddle, side patches, subtle ruff, and asymmetric ears.
+- The renderer keeps private video/photo references out of public assets and uses only distilled behavior labels in docs/metadata.
 
 ## Chat Feed Interaction Contract
 

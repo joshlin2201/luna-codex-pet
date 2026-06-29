@@ -2,6 +2,12 @@
 
 This is the working spec for preserving Luna's expanded behavior set.
 
+## Iteration 2026-06-29
+
+Luna v3 is a deterministic cute-illustration render pass. It replaces the earlier transformed semi-realistic sheet with directly rendered state poses grounded in Luna's private video references and the public behavior evidence contract.
+
+The active renderer is `tools/render_luna_v3.py`. The older `tools/enrich_luna_iteration.py` command remains as a compatibility wrapper.
+
 ## Iteration 2026-06-28
 
 Luna v2 fills all 8 atlas cells in every row. The first runtime-compatible frames still preserve the Codex state order, while the previously empty cells now contain Luna-consistent in-between or return-loop frames for richer showcase playback and future renderers that scan all columns.
@@ -17,7 +23,7 @@ Luna v2 fills all 8 atlas cells in every row. The first runtime-compatible frame
 | 4 | `jumping` | 8 | Binky-style compact crouch, hind-foot kick, flatter airborne stretch, and settle. |
 | 5 | `failed` | 8 | Soft droop: ears lower, head dips, loaf compresses. |
 | 6 | `waiting` | 8 | Alert input-needed loaf with perked ears and nose twitch. |
-| 7 | `running` | 8 | In-place working loop using head, ears, breathing, eye, and nose motion. |
+| 7 | `running` | 8 | In-place processing loop as low nose-down exploration, not literal sprinting. |
 | 8 | `review` | 8 | Focused inspection loop with head tilt and Luna's quirky left-eye squint. |
 
 ## Accuracy Locks
@@ -39,6 +45,13 @@ Luna v2 fills all 8 atlas cells in every row. The first runtime-compatible frame
 - `running-right`, `running-left`, and `jumping` are the only states that should regularly expose the long hind feet, because the videos show them extending during real locomotion.
 - Hover/click feedback should be a sniff, tiny pivot, or approach/retreat cue, not a hand wave or floating effect.
 - Completion should return to a low loaf. Error should lower and soften the loaf, not add symbols or props.
+
+## Renderer Contract
+
+- Source of truth: `tools/render_luna_v3.py`.
+- Output files: `assets/spritesheet.webp`, `assets/contact-sheet.png`, `assets/previews/*.gif`, `qa/installed-validation.json`, `qa/qa-review.json`, and `qa/qa-summary.json`.
+- Installed package: `~/.codex/pets/luna/pet.json` and `~/.codex/pets/luna/spritesheet.webp`.
+- Any renderer change must preserve the 1536 x 1872 atlas, 8 x 9 grid, 192 x 208 cells, transparent background, and all nine Codex state rows.
 
 ## Repair Priority
 

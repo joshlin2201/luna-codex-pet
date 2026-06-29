@@ -52,7 +52,7 @@
     "quirky slightly squinty left eye",
     "gray saddle and side patches",
     "upright expressive asymmetric ears",
-    "v2 full-row animation enrichment with all eight atlas cells filled"
+    "v3 cute illustrated renderer with all seventy-two atlas cells built from the behavior/anatomy spec"
   ],
   "anatomyRules": {
     "restingLoaf": [
@@ -203,12 +203,14 @@
       "purpose": "in-place task-processing state",
       "motion": [
         "focused breathing",
+        "nose-down exploration",
         "small head bob",
         "ear adjustment",
         "eye/nose motion"
       ],
       "accuracyNotes": [
         "not a generic spinner replacement",
+        "not a literal sprinting row",
         "uses Luna-specific facial features"
       ],
       "runtimeCompatibleFrames": 6
@@ -350,6 +352,28 @@
       "published raw source media or private local paths"
     ]
   },
+  "buildImplementation": {
+    "iteration": "2026-06-29-video-grounded-v3-render",
+    "renderer": "tools/render_luna_v3.py",
+    "compatibilityWrapper": "tools/enrich_luna_iteration.py",
+    "style": "cute clean illustration",
+    "outputs": [
+      "assets/spritesheet.webp",
+      "assets/contact-sheet.png",
+      "assets/previews/*.gif",
+      "qa/installed-validation.json",
+      "qa/qa-review.json",
+      "qa/qa-summary.json"
+    ],
+    "implementedImprovements": [
+      "directly rendered all 72 atlas cells instead of transforming the prior semi-realistic sheet",
+      "made non-directional states visually distinct",
+      "encoded low dewlap loaf anatomy into resting states",
+      "encoded rabbit load-kick-recover mechanics into directional and jumping states",
+      "kept waving as ear flick/head tilt with no raised foreleg",
+      "kept running as low nose-down exploration rather than a generic run cycle"
+    ]
+  },
   "qualityArtifacts": {
     "contactSheet": "contact-sheet.png",
     "previewPage": "preview.html",
@@ -359,7 +383,9 @@
     "featureMap": "FEATURES.md",
     "identityGuide": "IDENTITY-GUIDE.md",
     "behaviorEvidence": "docs/LUNA-BEHAVIOR-EVIDENCE.md",
+    "renderer": "tools/render_luna_v3.py",
+    "iterationNotesV3": "docs/ITERATION-2026-06-29.md",
     "iterationNotes": "docs/ITERATION-2026-06-28.md"
   },
-  "iteration": "2026-06-29-video-grounded-interaction"
+  "iteration": "2026-06-29-video-grounded-v3-render"
 }
