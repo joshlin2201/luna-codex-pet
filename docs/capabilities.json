@@ -230,6 +230,126 @@
       "runtimeCompatibleFrames": 6
     }
   },
+  "behaviorEvidence": {
+    "sourcePolicy": "Private Luna videos and sampled frames were used for analysis but are not included in this public repo.",
+    "analysisDate": "2026-06-29",
+    "sourceVideoLabels": [
+      "IMG_6465",
+      "IMG_6458",
+      "IMG_6090",
+      "IMG_6464",
+      "IMG_5969",
+      "IMG_5358",
+      "IMG_3776",
+      "IMG_1385",
+      "IMG_0734_A",
+      "IMG_1009",
+      "IMG_0734_B",
+      "IMG_0697",
+      "IMG_0231",
+      "D8F25B9E"
+    ],
+    "behaviorVocabulary": [
+      "loaf",
+      "wait",
+      "inspect",
+      "sniff",
+      "hop",
+      "peek",
+      "settle"
+    ],
+    "chatFeedStateMap": {
+      "idleChat": {
+        "behavior": "low tucked loaf with tiny nose, blink, and ear motion",
+        "recommendedState": "idle",
+        "evidence": [
+          "IMG_3776",
+          "IMG_6458",
+          "IMG_0734_A",
+          "IMG_0734_B"
+        ]
+      },
+      "userTyping": {
+        "behavior": "quiet attentive loaf with ears forward and only a slight head lift",
+        "recommendedState": "waiting",
+        "evidence": [
+          "IMG_6464",
+          "IMG_6465",
+          "D8F25B9E"
+        ]
+      },
+      "assistantStreaming": {
+        "behavior": "nose-down exploration or focused low-body processing",
+        "recommendedState": "running",
+        "evidence": [
+          "IMG_5358",
+          "IMG_5969"
+        ]
+      },
+      "toolCall": {
+        "behavior": "short rabbit hop with compact load, forefeet reach, long hind-foot kick, and recovery",
+        "recommendedState": "running-right",
+        "alternateState": "running-left",
+        "evidence": [
+          "IMG_5969",
+          "IMG_0697",
+          "IMG_0231"
+        ]
+      },
+      "needsInput": {
+        "behavior": "still attentive loaf with face forward and dewlap covering feet",
+        "recommendedState": "waiting",
+        "evidence": [
+          "IMG_6465",
+          "IMG_0734_A",
+          "IMG_0734_B"
+        ]
+      },
+      "review": {
+        "behavior": "head turn, asymmetric ears, left-eye focus",
+        "recommendedState": "review",
+        "evidence": [
+          "IMG_6090",
+          "IMG_6464"
+        ]
+      },
+      "success": {
+        "behavior": "small lift or glance, then settle back into loaf",
+        "recommendedState": "idle",
+        "evidence": [
+          "IMG_6464",
+          "D8F25B9E",
+          "IMG_6465"
+        ]
+      },
+      "error": {
+        "behavior": "lower head and softer ears, then compact recovery",
+        "recommendedState": "failed",
+        "evidence": [
+          "IMG_3776",
+          "IMG_1009"
+        ]
+      },
+      "hoverOrClick": {
+        "behavior": "sniff, pivot, small approach, or small retreat",
+        "recommendedState": "waving",
+        "evidence": [
+          "IMG_0697",
+          "IMG_1385",
+          "IMG_1009"
+        ]
+      }
+    },
+    "nonGoals": [
+      "paw pads",
+      "hands or fingers",
+      "raised foreleg waving",
+      "typing or tool props",
+      "speech bubbles or icons",
+      "generic dog or cat run cycles",
+      "published raw source media or private local paths"
+    ]
+  },
   "qualityArtifacts": {
     "contactSheet": "contact-sheet.png",
     "previewPage": "preview.html",
@@ -238,7 +358,8 @@
     "qaSummary": "qa-summary.json",
     "featureMap": "FEATURES.md",
     "identityGuide": "IDENTITY-GUIDE.md",
+    "behaviorEvidence": "docs/LUNA-BEHAVIOR-EVIDENCE.md",
     "iterationNotes": "docs/ITERATION-2026-06-28.md"
   },
-  "iteration": "2026-06-28-full8-enrichment"
+  "iteration": "2026-06-29-video-grounded-interaction"
 }

@@ -32,6 +32,14 @@ Luna v2 fills all 8 atlas cells in every row. The first runtime-compatible frame
 - Never add paw pads, hand-like forelimbs, fingers, dog/cat feet, short generic back paws, props, text, shadows, scenery, or detached effects.
 - Preserve the long body, gray saddle patches, white blaze, dark eye mask, subtle lionhead ruff, upright asymmetric ears, and quirky left eye.
 
+## Video-Grounded Interaction Locks
+
+- Chat/feed states should use the behavior vocabulary documented in `docs/LUNA-BEHAVIOR-EVIDENCE.md`: loaf, wait, inspect, sniff, hop, peek, and settle.
+- `idle`, `waiting`, `review`, `failed`, and in-place `running` should stay grounded in low loaf or low exploration poses unless a future source clip explicitly supports a higher pose.
+- `running-right`, `running-left`, and `jumping` are the only states that should regularly expose the long hind feet, because the videos show them extending during real locomotion.
+- Hover/click feedback should be a sniff, tiny pivot, or approach/retreat cue, not a hand wave or floating effect.
+- Completion should return to a low loaf. Error should lower and soften the loaf, not add symbols or props.
+
 ## Repair Priority
 
 1. Fix rabbit anatomy before style polish.

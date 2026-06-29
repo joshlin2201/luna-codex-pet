@@ -20,6 +20,21 @@ Showcase package: `luna-codex-pet`
 - `running`: active task-processing loop in place through ear, nose, eye, and head motion; distinct from directional hopping.
 - `review`: careful inspection loop through head tilt, focused left-eye squint, blink, and ear adjustment.
 
+## Chat Feed Interaction Contract
+
+The chat/feed behavior layer should map plugin conditions to real Luna behaviors documented in `docs/LUNA-BEHAVIOR-EVIDENCE.md`:
+
+- Idle chat: low tucked loaf with head cushioned into the dewlap.
+- User typing or needs input: quiet attentive loaf with ears forward and only a slight head lift.
+- Assistant streaming: nose-down exploration/focused low-body processing.
+- Tool calls or directional transitions: short rabbit hop with compact load, forefeet reach, long hind-foot kick, and recovery.
+- Review or verification: head turn, asymmetric ears, and Luna's quirky left-eye focus.
+- Success: small lift or glance, then settle back into loaf.
+- Error: lower head and softer ears, then compact recovery.
+- Hover or click: sniff, pivot, tiny approach, or retreat.
+
+Any new interaction should cite source behavior labels before generation and should avoid ungrounded cartoon gestures.
+
 ## QA Artifacts
 
 - `assets/contact-sheet.png` - Full visual sheet for all 9 rows.

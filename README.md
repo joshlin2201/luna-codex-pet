@@ -12,7 +12,8 @@ Luna is a custom animated Codex pet based on Josh's real rabbit: a long, low whi
 - Rabbit-specific animation rules: forefeet reach/land, hindquarters load, long hind feet kick through toe-off, flight, and recovery.
 - Accurate loaf anatomy: low head on dewlap, tucked front feet, compact steep gray haunch when hind legs are folded.
 - No generic paw/arm shapes: feet stay rabbit-specific and only appear where motion requires them.
-- Public-safe package: generated pet assets and docs only. Original private reference photos are not included.
+- Video-grounded interaction rules for chat/feed states: loaf, wait, inspect, sniff, hop, peek, and settle.
+- Public-safe package: generated pet assets and docs only. Original private reference media is not included.
 
 ## Preview
 
@@ -73,6 +74,7 @@ See [`qa/installed-validation.json`](qa/installed-validation.json) and [`qa/qa-r
 - [`docs/ITERATION-2026-06-28.md`](docs/ITERATION-2026-06-28.md) - v2 enrichment notes.
 - [`docs/IDENTITY-GUIDE.md`](docs/IDENTITY-GUIDE.md) - Luna identity preservation rules.
 - [`docs/LUNA-REFERENCE-ANALYSIS.md`](docs/LUNA-REFERENCE-ANALYSIS.md) - distilled reference/photo analysis without publishing source photos.
+- [`docs/LUNA-BEHAVIOR-EVIDENCE.md`](docs/LUNA-BEHAVIOR-EVIDENCE.md) - video-grounded chat/feed interaction contract without publishing source videos.
 - [`docs/capabilities.json`](docs/capabilities.json) - machine-readable state and anatomy metadata.
 
 ## License
